@@ -24,7 +24,7 @@ public class APITest {
     @Test
     public void deveCriarTarefa(){
         RestAssured.given()
-                .body("  {\"task\":\"Teste via API\", \"dueDate\":\"2021-01-01\"}")
+                .body("  {\"task\":\"Teste via API\", \"dueDate\":\"2022-01-01\"}")
                 .contentType(ContentType.JSON)
                 .when()
                 .post("/todo")
@@ -34,7 +34,7 @@ public class APITest {
     }
 
     @Test
-    public void deveCriarTarefaComDataPassada(){
+    public void NaoDeveCriarTarefaComDataPassada(){
         RestAssured.given()
                 .body("  {\"task\":\"Teste via API\", \"dueDate\":\"2020-01-01\"}")
                 .contentType(ContentType.JSON)
