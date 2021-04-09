@@ -17,7 +17,7 @@ public class APITest {
                 .when()
                 .get("/todo")
                 .then()
-                .statusCode(200)
+                .statusCode(203)
         ;
     }
 
@@ -49,7 +49,7 @@ public class APITest {
 
     @Test
     public void deveRemoverTarefa(){
-        Integer id =RestAssured.given()
+        Integer id = RestAssured.given()
                 .body("  {\"task\":\"Teste de remocao\", \"dueDate\":\"2022-01-01\"}")
                 .contentType(ContentType.JSON)
                 .when()
