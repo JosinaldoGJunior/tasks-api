@@ -17,7 +17,7 @@ public class APITest {
                 .when()
                 .get("/todo")
                 .then()
-                .statusCode(203)
+                .statusCode(200)
         ;
     }
 
