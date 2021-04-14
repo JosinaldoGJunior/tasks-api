@@ -29,7 +29,7 @@ public class APITest {
                 .when()
                 .post("/todo")
                 .then()
-                .statusCode(200)
+                .statusCode(201)
         ;
     }
 
